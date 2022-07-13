@@ -16,8 +16,18 @@ module.exports = ({ env }) => [
         useDefaults: true,
         directives: {
           "connect-src": ["'self'", "https:"],
-          "img-src": ["'self'", "data:", "blob:", `${env("DO_SPACE_CDN")}`],
-          "media-src": ["'self'", "data:", "blob:", `${env("DO_SPACE_CDN")}`],
+          "img-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "yourBucketName.s3.yourRegion.amazonaws.com",
+          ],
+          "media-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "yourBucketName.s3.yourRegion.amazonaws.com",
+          ],
           upgradeInsecureRequests: null,
         },
       },
