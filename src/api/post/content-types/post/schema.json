@@ -41,11 +41,6 @@
       "target": "api::category.category",
       "mappedBy": "posts"
     },
-    "Content": {
-      "type": "component",
-      "repeatable": true,
-      "component": "content.content-post"
-    },
     "content": {
       "type": "richtext"
     }
